@@ -10,16 +10,56 @@ const allposts = await getCollection("blog");
       {
         allposts.map((post, index) => (
           <div
-            class={`flex flex-col justify-start items-start gap-2 ${
+            class={`post-card flex flex-col justify-start items-start gap-2 cursor-pointer ${
               index === 0 ? "col-span-2" : "col-span-1"
             }`}
           >
-            <img src={post.data.heroImage} alt={post.data.title} />
-            <h3 class="text-2xl font-serif font-bold">{post.data.title}</h3>
-            <p>{post.data.description}</p>
+            <div class="overflow-hidden">
+              <img src={post.data.heroImage} alt={post.data.title} />
+            </div>
+            <div class="post-info">
+              <h3 class="text-2xl font-serif font-bold">{post.data.title}</h3>
+              <p>{post.data.description}</p>
+            </div>
           </div>
         ))
       }
     </div>
   </main>
 </BaseLayout>
+
+<style>
+  .post-card .post-info {
+    animation: cardhover-out 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .post-card:hover .post-info {
+    animation: cardhover-in 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+
+  .post-card img {
+    transform: scale(1);
+    transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .post-card:hover img {
+    transform: scale(1.1);
+    transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @keyframes cardhover-in {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  @keyframes cardhover-out {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+</style>
