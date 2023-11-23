@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				serif: ["lora", ...defaultTheme.fontFamily.serif],
+				serif: ["Lora Variable", "Lora", ...defaultTheme.fontFamily.serif],
 				sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
 			},
 		},
