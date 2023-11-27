@@ -1,6 +1,6 @@
 ---
 title: 'Charting the Course: A Blueprint to Continued U.S. Leadership in Space'
-description: 'A few short generations ago, space was inaccessible. The most we could do to explore beyond our planet was to peer at the sky through land-based telescopes. Then, in the span of my lifetime, advances in rocketry made it possible for us to launch satellites, spacecraft, and even humans beyond our atmosphere. And while the drive to reach ever farther into space persists, the environment in which we’re operating has changed.'
+description: 'A few short generations ago, space was inaccessible. The most we could do to explore beyond our planet was to peer at the sky through land-based telescopes.'
 pubDate: 'Nov 06 2023'
 heroImage: '/news/opinion-post-04.jpg'
 tags: ["Opinion"]
