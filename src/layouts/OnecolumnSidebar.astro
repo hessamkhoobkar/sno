@@ -1,0 +1,15 @@
+---
+import Sidebar from "../components/Sidebar.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="w-full flex justify-start items-start gap-12">
+    <div class="w-3/4">
+      <slot />
+    </div>
+    <div class="w-1/4">
+      <Sidebar />
+    </div>
+  </div>
+</BaseLayout>
