@@ -1,0 +1,12 @@
+---
+import { getCollection } from "astro:content";
+const allNews = await getCollection("news");
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostVertical from "../../components/PostVertical.astro";
+---
+
+<BaseLayout>
+  <div class="grid grid-cols-2 gap-8 gap-y-12">
+    {allNews.map((news) => <PostVertical slug={news.slug} news={news.data} />)}
+  </div>
+</BaseLayout>

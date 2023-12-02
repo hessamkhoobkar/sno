@@ -1,0 +1,82 @@
+---
+const { slug, news } = Astro.props;
+---
+
+<div
+  class="post-card w-full flex flex-col justify-start items-start gap-4 border-b pb-8"
+>
+  <a href={`/news/${slug}/`}>
+    <div class="overflow-hidden rounded-lg">
+      <img src={news.heroImage} alt={news.title} />
+    </div>
+  </a>
+  <div class="post-info flex flex-col justify-start items-start gap-1">
+    <div class="flex justify-start items-center gap-2 text-xs">
+      <span class="text-stone-400">{news.pubDate}</span>
+      <span>.</span>
+      <span
+        class="font-bold text-sky-600 hover:text-sky-500 transition-all duration-200 ease-in-out"
+      >
+        <a class="relative block" href={`/tags/${news.tags[0]}/`}>
+          <span>
+            {news.tags[0]}
+          </span>
+          <span
+            class="absolute block inset-0 underline opacity-0 hover:opacity-100 duration-200 ease-in-out"
+          >
+            {news.tags[0]}
+          </span>
+        </a>
+      </span>
+    </div>
+    <h3 class="text-2xl font-serif font-bold">
+      <a class="relative block" href={`/news/${slug}/`}>
+        <span>
+          {news.title}
+        </span>
+        <span
+          class="absolute block inset-0 underline opacity-0 hover:opacity-100 duration-300 ease-in-out"
+        >
+          {news.title}
+        </span>
+      </a>
+    </h3>
+    <p class="text-sm">{news.description}</p>
+  </div>
+</div>
+
+<style>
+  .post-card .post-info {
+    animation: cardhover-out 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .post-card:hover .post-info {
+    animation: cardhover-in 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+
+  .post-card img {
+    transform: scale(1);
+    transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .post-card:hover img {
+    transform: scale(1.1);
+    transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @keyframes cardhover-in {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  @keyframes cardhover-out {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+</style>

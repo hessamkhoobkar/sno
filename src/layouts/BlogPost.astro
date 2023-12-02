@@ -17,9 +17,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
   <body>
     <Header />
-    <main>
+    <main class="w-full max-w-7xl mx-auto">
       <article
-        class="prose md:prose-lg lg:prose-xl prose-stone dark:prose-invert prose-img:rounded-xl"
+        class="prose md:prose-lg lg:prose-xl prose-stone dark:prose-invert prose-img:rounded-xl mx-auto"
       >
         <div class="hero-image">
           {
@@ -28,10 +28,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             )
           }
         </div>
-        <div class="prose">
+        <div class="prose mx-auto">
           <div class="title">
             <div class="date">
-              <FormattedDate date={pubDate} />
+              <!-- <FormattedDate date={pubDate} /> -->
               {
                 updatedDate && (
                   <div class="last-updated-on">

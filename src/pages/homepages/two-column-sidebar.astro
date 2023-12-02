@@ -6,7 +6,7 @@ import PostVertical from "../../components/PostVertical.astro";
 ---
 
 <OneColSidebar>
-  <div class="flex flex-col justify-start items-start gap-8">
-    {allNews.map((news) => <PostVertical news={news.data} />)}
+  <div class="grid grid-cols-2 gap-8 gap-y-12">
+    {allNews.map((news) => <PostVertical slug={news.slug} news={news.data} />)}
   </div>
 </OneColSidebar>
