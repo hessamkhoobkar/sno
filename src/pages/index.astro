@@ -1,35 +1,35 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-const allNews = await getCollection("news");
+const allBlogPost = await getCollection("blog");
 ---
 
 <BaseLayout>
   <main>
     <div class="grid grid-cols-3 gap-4">
       {
-        allNews.map((news, index) => (
+        allBlogPost.map((blog, index) => (
           <div
             class={`relative post-card flex flex-col justify-start items-start gap-2 cursor-pointer ${
               index === 0 ? "col-span-2" : "col-span-1"
             }`}
           >
             <div class="overflow-hidden">
-              <img src={news.data.heroImage} alt={news.data.title} />
+              <img src={blog.data.heroImage} alt={blog.data.title} />
             </div>
             <div
               class={`post-info flex flex-col justify-start items-start gap-4 ${
                 index === 0 ? "absolute inset-4" : ""
               }`}
             >
-              <h3 class="text-2xl font-serif font-bold">{news.data.title}</h3>
-              <p class="text-sm">{news.data.description.slice(0, 80)}...</p>
+              <h3 class="text-2xl font-serif font-bold">{blog.data.title}</h3>
+              <p class="text-sm">{blog.data.description.slice(0, 80)}...</p>
               <div class="flex justify-start items-center gap-2 text-xs">
                 <span class="text-stone-400 hover:text-stone-950 underline">
-                  {news.data.authors[0]}
+                  {blog.data.authors[0]}
                 </span>
-                <span class="text-stone-400">{news.data.pubDate}</span>
-                <span class="text-sky-600">{news.data.tags[0]}</span>
+                <span class="text-stone-400">{blog.data.pubDate}</span>
+                <span class="text-sky-600">{blog.data.tags[0]}</span>
               </div>
             </div>
           </div>

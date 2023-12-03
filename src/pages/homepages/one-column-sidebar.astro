@@ -1,12 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-const allNews = await getCollection("news");
+const allBlogPost = await getCollection("blog");
 import OneColSidebar from "../../layouts/OneColSidebar.astro";
 import PostVertical from "../../components/PostVertical.astro";
 ---
 
 <OneColSidebar>
   <div class="flex flex-col justify-start items-start gap-8">
-    {allNews.map((news) => <PostVertical news={news.data} />)}
+    {allBlogPost.map((post) => <PostVertical post={post.data} />)}
   </div>
 </OneColSidebar>

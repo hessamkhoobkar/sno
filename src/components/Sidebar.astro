@@ -1,8 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-const allNews = await getCollection("news");
+const allBlogPost = await getCollection("blog");
 
-const uniqueTags = [...new Set(allNews.map((news) => news.data.tags).flat())];
+const uniqueTags = [
+  ...new Set(allBlogPost.map((post) => news.data.tags).flat()),
+];
 ---
 
 <div class="mb-8">
