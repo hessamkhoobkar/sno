@@ -36,11 +36,13 @@ const { title, description, pubDate, updatedDate, tags, heroImage } =
             <div
               class="flex justify-start items-center gap-4 text-xs font-bold text-stone-400 mb-4"
             >
-              <FormattedDate date={pubDate} />
-              <span>•</span>
-              <span>
-                {tags && tags[0]}
-              </span>
+              {
+                tags && (
+                    <FormattedDate date={pubDate} />
+                    <span>•</span>
+                    <span>{tags && tags[0]}</span>
+                )
+              }
             </div>
             <h1>{title}</h1>
             <hr />

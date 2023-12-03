@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import OneColSidebar from "../../layouts/OneColSidebar.astro";
+import PostVertical from "../../components/PostVertical.astro";
+
+export async function getStaticPaths() {
+  const allBlogPost = await getCollection("blog");
+  const uniqueTags = [
+    ...new Set(allBlogPost.map((post) => post.data.tags).flat()),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allBlogPost.filter((post) =>
+      post.data.tags.includes(tag)
+    );
+
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<OneColSidebar>
+  <div class="border-b border-stone-200 pb-6 mb-8">
+    <h1 class="text-2xl font-serif font-bold">
+      Posts tagged with <span class="text-sky-500">{tag}</span>
+    </h1>
+  </div>
+  <div class="grid grid-cols-2 gap-8">
+    {posts.map((post) => <PostVertical slug={post.slug} post={post.data} />)}
+  </div>
+</OneColSidebar>
