@@ -7,13 +7,48 @@ const uniqueTags = [
 ];
 ---
 
-<div class="mb-8">
+<div class="pb-8 border-b">
   <h2 class="font-serif font-bold text-2xl mb-2">About me</h2>
+  <img class="w-32 h-32 mb-4" src="/public/avatar.webp" alt="" />
   <p>
-    I'm a traveler, wanderer, explorer, and adventurer of life's great journey.
+    Space enthusiast, cosmic storyteller, and NASA aficionado. Join me as we
+    explore the wonders of the universe together.
   </p>
 </div>
-<h2 class="font-serif font-bold text-2xl mb-2">Categories</h2>
-<ul>
-  {uniqueTags.map((tag) => <li>{tag}</li>)}
-</ul>
+<div class="py-4">
+  <h2 class="font-serif font-bold text-2xl mb-2">Categories</h2>
+  <ul>
+    {
+      uniqueTags.map((tag) => (
+        <li>
+          <a
+            class="flex justify-start items-center gap-1 py-1 relative font-serif font-medium"
+            href={`/tags/${tag}/`}
+          >
+            <span class="tag">#</span>
+            <span class="tag-name">{tag}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  a .tag {
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover .tag {
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+  }
+  a .tag-name {
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover .tag-name {
+    font-weight: bolder;
+    transform: translateX(0.25em);
+    transition: all 0.3s ease-in-out;
+  }
+</style>

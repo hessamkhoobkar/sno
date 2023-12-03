@@ -6,7 +6,7 @@ import PostVertical from "../../components/PostVertical.astro";
 ---
 
 <OneColSidebar>
-  <div class="grid grid-cols-2 gap-8 gap-y-12">
+  <div class="grid grid-cols-2 gap-8">
     {
       allBlogPost.map((post) => (
         <PostVertical slug={post.slug} post={post.data} />
