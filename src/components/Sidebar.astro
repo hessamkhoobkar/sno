@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 const allBlogPost = await getCollection("blog");
 
 const uniqueTags = [
-  ...new Set(allBlogPost.map((post) => news.data.tags).flat()),
+  ...new Set(allBlogPost.map((post) => post.data.tags).flat()),
 ];
 ---
 

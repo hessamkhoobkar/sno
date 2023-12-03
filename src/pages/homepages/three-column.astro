@@ -9,7 +9,7 @@ import PostVertical from "../../components/PostVertical.astro";
   <div class="grid grid-cols-3 gap-8 gap-y-12">
     {
       allBlogPost.map((post) => (
-        <PostVertical slug={news.slug} post={post.data} />
+        <PostVertical slug={post.slug} post={post.data} />
       ))
     }
   </div>
