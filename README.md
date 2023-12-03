@@ -1,5 +1,7 @@
 # Astro Starter Kit: Blog
 
+- [ ] Add two columns to the blog page
+
 ```sh
 npm create astro@latest -- --template blog
 ```
