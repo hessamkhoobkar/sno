@@ -2,7 +2,7 @@
 title: 'Starship/Super Heavy lifts off on second flight'
 description: 'BERLIN — SpaceX’s Starship vehicle reached space on its second integrated test flight Nov. 18 but broke apart late in its ascent after successfully demonstrating the performance of its booster and a new stage separation technique.'
 pubDate: 'Nov 18 2023'
-heroImage: '/news/launch-post-01.jpg'
+heroImage: '/blog/launch-post-01.jpg'
 tags: ["Launch"]
 authors: ["Jeff Foust"]
 ---

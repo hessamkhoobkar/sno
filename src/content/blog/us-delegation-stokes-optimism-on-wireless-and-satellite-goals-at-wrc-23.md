@@ -2,7 +2,7 @@
 title: 'U.S. delegation stokes optimism on wireless and satellite goals at WRC-23'
 description: 'Jessica Rosenworcel, chair of the FCC, said a key goal of the U.S. delegation is to “foster continued growth and U.S. leadership in the space economy.”'
 pubDate: 'Nov 20 2023'
-heroImage: '/news/civil-post-03.jpg'
+heroImage: '/blog/civil-post-03.jpg'
 tags: ["Civil"]
 authors: ["Sandra Erwin"]
 ---
@@ -29,7 +29,7 @@ Harmonizing means allocating RF spectrum consistently across borders to enable g
 
 ## National spectrum strategy
 
-The context for the U.S. agenda is the Biden administration’s [National Spectrum Strategy](https://www.commerce.gov/news/press-releases/2023/11/biden-harris-administration-launches-national-spectrum-strategy-advance#:~:text=The%20National%20Spectrum%20Strategy%20will%20foster%20innovation%20in%20the%20public,suitability%20for%20potential%20new%20uses.) released Nov. 13. It identifies more than 2,700 megahertz of airwaves to study for new uses by both the private sector and federal agencies.
+The context for the U.S. agenda is the Biden administration’s [National Spectrum Strategy](https://www.commerce.gov/blog/press-releases/2023/11/biden-harris-administration-launches-national-spectrum-strategy-advance#:~:text=The%20National%20Spectrum%20Strategy%20will%20foster%20innovation%20in%20the%20public,suitability%20for%20potential%20new%20uses.) released Nov. 13. It identifies more than 2,700 megahertz of airwaves to study for new uses by both the private sector and federal agencies.
 
 Rosenworcel said the U.S. is advocating for spectrum for unlicensed services like a new Wi-Fi standard known as Wi-Fi 7. “Beyond that, we think this is the spectrum where we are going to see the growth of augmented and virtual reality.”
 
@@ -59,7 +59,7 @@ Fick noted that WRC-23 delegations will be challenged to reconcile a diversity o
 
 Industry groups have voiced concerns that the U.S. is not being assertive enough in allocating spectrum for 5G communications.
 
-[The CTIA](https://www.ctia.org/news/ctia-statement-on-white-house-national-spectrum-strategy) association that represents the U.S. wireless communications industry, said it has “watched with increasing alarm as other countries allocate significantly more mid-band spectrum for 5G services.”
+[The CTIA](https://www.ctia.org/blog/ctia-statement-on-white-house-national-spectrum-strategy) association that represents the U.S. wireless communications industry, said it has “watched with increasing alarm as other countries allocate significantly more mid-band spectrum for 5G services.”
 
 The group said China is ahead of the United States “in terms of prime 5G mid-band allocations for licensed mobile use.”
 

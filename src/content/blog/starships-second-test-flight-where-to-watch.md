@@ -2,7 +2,7 @@
 title: 'Starship’s second test flight: where to watch'
 description: 'You can watch the official SpaceX live stream via the social media platform X or watch the Spaceflight Now and NASAspaceflight.com webcasts via the YouTube feeds'
 pubDate: 'Nov 18 2023'
-heroImage: '/news/launch-post-02.jpg'
+heroImage: '/blog/launch-post-02.jpg'
 tags: ["Launch"]
 authors: ["SpaceNews Staff"]
 ---

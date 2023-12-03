@@ -2,7 +2,7 @@
 title: 'Deterring a looming Space Pearl Harbor through better public discourse'
 description: 'The Space Rapid Capabilities Office co-sponsored this year’s Hyperspace Challenge to get more insight into commercial technologies that could enable dynamic space operations, such as satellite propulsion.'
 pubDate: 'Nov 15 2023'
-heroImage: '/news/opinion-post-02.jpg'
+heroImage: '/blog/opinion-post-02.jpg'
 tags: ["Opinion"]
 authors: ["Brian G. Chow"]
 ---

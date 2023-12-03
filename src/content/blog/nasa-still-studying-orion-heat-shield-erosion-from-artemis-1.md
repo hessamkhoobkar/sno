@@ -2,7 +2,7 @@
 title: 'NASA still studying Orion heat shield erosion from Artemis 1'
 description: 'BERLIN — A year after the launch of the Artemis 1 mission, NASA is continuing to study the performance of the heat shield on the Orion spacecraft, a review that may take several more months to complete.'
 pubDate: 'Nov 19 2023'
-heroImage: '/news/civil-post-01.jpg'
+heroImage: '/blog/civil-post-01.jpg'
 tags: ["Civil"]
 authors: ["Jeff Foust"]
 ---

@@ -2,7 +2,7 @@
 title: 'Starship cleared for Nov. 18 launch'
 description: 'BREMEN, Germany — China launched the first of a new series of Haiyang ocean observation satellites late Wednesday.'
 pubDate: 'Nov 15 2023'
-heroImage: '/news/launch-post-05.jpg'
+heroImage: '/blog/launch-post-05.jpg'
 tags: ["Launch"]
 authors: ["Jeff Foust"]
 ---

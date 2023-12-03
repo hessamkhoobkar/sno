@@ -2,7 +2,7 @@
 title: 'Sierra Space lays off 165 in workforce realignment'
 description: 'WASHINGTON — Sierra Space laid off 165 employees who had been working on its Dream Chaser vehicle as part of what the company described as efforts to realign its workforce to other projects.'
 pubDate: 'Nov 20 2023'
-heroImage: '/news/commercial-post-03.jpg'
+heroImage: '/blog/commercial-post-03.jpg'
 tags: ["Commercial"]
 authors: ["Jeff Foust"]
 ---

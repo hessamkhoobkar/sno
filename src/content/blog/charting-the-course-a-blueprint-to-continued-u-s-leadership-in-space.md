@@ -2,7 +2,7 @@
 title: 'Charting the Course: A Blueprint to Continued U.S. Leadership in Space'
 description: 'A few short generations ago, space was inaccessible. The most we could do to explore beyond our planet was to peer at the sky through land-based telescopes.'
 pubDate: 'Nov 06 2023'
-heroImage: '/news/opinion-post-04.jpg'
+heroImage: '/blog/opinion-post-04.jpg'
 tags: ["Opinion"]
 authors: ["U.S. Rep. Brian Babin"]
 ---

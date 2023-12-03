@@ -2,7 +2,7 @@
 title: 'Investors grant Astra extension on loan'
 description: 'BERLIN — Investors in launch vehicle and spacecraft propulsion company Astra Space have given the company a four-day extension on a loan to provide the company more time to line up a longer-term funding deal.'
 pubDate: 'Nov 18 2023'
-heroImage: '/news/commercial-post-05.jpg'
+heroImage: '/blog/commercial-post-05.jpg'
 tags: ["Commercial"]
 authors: ["Jeff Foust"]
 ---

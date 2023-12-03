@@ -2,7 +2,7 @@
 title: 'Starliner “on track” for April crewed test flight'
 description: 'WASHINGTON — NASA says the first crewed launch of Boeing’s CST-100 Starliner vehicle remains on schedule for the middle of April as the company completes work to resolve the latest technical problems with the vehicle.'
 pubDate: 'Nov 21 2023'
-heroImage: '/news/civil-post-04.jpg'
+heroImage: '/blog/civil-post-04.jpg'
 tags: ["Civil"]
 authors: ["Jeff Foust"]
 ---

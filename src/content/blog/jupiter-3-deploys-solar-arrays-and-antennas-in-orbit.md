@@ -2,7 +2,7 @@
 title: 'Jupiter-3 deploys solar arrays and antennas in orbit'
 description: 'SAN FRANCISCO – EchoStar’s Jupiter-3, the world’s [heaviest commercial communications satellite](https://spacenews.com/hughes-jupiter-3-preps-for-launch/), is performing as expected after deploying solar arrays and antennas in geostationary orbit.'
 pubDate: 'Nov 20 2023'
-heroImage: '/news/commercial-post-01.jpg'
+heroImage: '/blog/commercial-post-01.jpg'
 tags: ["Commercial"]
 authors: ["Debra Werner"]
 ---

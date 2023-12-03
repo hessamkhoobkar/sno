@@ -2,7 +2,7 @@
 title: 'Op-ed | Space Force launch strategy a step in the right direction'
 description: 'The Space Force’s embrace of competition within the commercial launch market has been a slow and in many ways painful process.'
 pubDate: 'Nov 01 2023'
-heroImage: '/news/opinion-post-05.jpg'
+heroImage: '/blog/opinion-post-05.jpg'
 tags: ["Opinion"]
 authors: ["Joshua C. Huminski"]
 ---

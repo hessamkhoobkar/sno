@@ -2,7 +2,7 @@
 title: 'Starship lunar lander missions to require nearly 20 launches, NASA says'
 description: 'BERLIN — As SpaceX prepares for its next Starship test flight, a NASA official said that the use of that vehicle for Artemis lunar landings will require “in the high teens” of launches, a much higher number than what the company’s leadership has previously claimed.'
 pubDate: 'Nov 17 2023'
-heroImage: '/news/civil-post-05.jpg'
+heroImage: '/blog/civil-post-05.jpg'
 tags: ["Civil"]
 authors: ["Jeff Foust"]
 ---

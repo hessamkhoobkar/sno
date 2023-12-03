@@ -2,7 +2,7 @@
 title: 'China launches new-gen Haiyang ocean monitoring satellite'
 description: 'BREMEN, Germany — China launched the first of a new series of Haiyang ocean observation satellites late Wednesday.'
 pubDate: 'Nov 16 2023'
-heroImage: '/news/launch-post-04.jpg'
+heroImage: '/blog/launch-post-04.jpg'
 tags: ["Launch"]
 authors: ["Andrew Jones"]
 ---

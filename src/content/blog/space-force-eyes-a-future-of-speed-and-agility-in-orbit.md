@@ -2,7 +2,7 @@
 title: 'Space Force eyes a future of speed and agility in orbit'
 description: 'The Space Rapid Capabilities Office co-sponsored this year’s Hyperspace Challenge to get more insight into commercial technologies that could enable dynamic space operations, such as satellite propulsion.'
 pubDate: 'Nov 17 2023'
-heroImage: '/news/opinion-post-01.jpg'
+heroImage: '/blog/opinion-post-01.jpg'
 tags: ["Opinion"]
 authors: ["Sandra Erwin"]
 ---

@@ -2,7 +2,7 @@
 title: 'NASA Mars smallsat mission to be on first New Glenn launch'
 description: 'WASHINGTON — NASA expects that a Mars smallsat mission will be on the first launch of Blue Origin’s New Glenn launch vehicle within a year, although with some risk about whether the rocket will be ready in time.'
 pubDate: 'Nov 21 2023'
-heroImage: '/news/civil-post-02.jpg'
+heroImage: '/blog/civil-post-02.jpg'
 tags: ["Civil"]
 authors: ["Jeff Foust"]
 ---

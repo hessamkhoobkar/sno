@@ -2,7 +2,7 @@
 title: 'ULA gearing up for first Vulcan launch'
 description: 'BERLIN — All the major components for the first Vulcan Centaur rocket are now at the launch site as United Launch Alliance prepares for a launch in late December.'
 pubDate: 'Nov 17 2023'
-heroImage: '/news/launch-post-03.jpg'
+heroImage: '/blog/launch-post-03.jpg'
 tags: ["Launch"]
 authors: ["Jeff Foust"]
 ---

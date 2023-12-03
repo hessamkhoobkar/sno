@@ -2,7 +2,7 @@
 title: 'MDA gets $131 million from mystery NGSO constellation customer'
 description: 'TAMPA, Fla. — An undisclosed customer is paying MDA 180 million Canadian dollars ($131 million) to start engineering a non-geostationary constellation of 36 satellites.'
 pubDate: 'Nov 20 2023'
-heroImage: '/news/commercial-post-02.jpg'
+heroImage: '/blog/commercial-post-02.jpg'
 tags: ["Commercial"]
 authors: ["Jason Rainbow"]
 ---

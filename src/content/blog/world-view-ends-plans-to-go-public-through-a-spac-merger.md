@@ -2,7 +2,7 @@
 title: 'World View ends plans to go public through a SPAC merger'
 description: 'WASHINGTON — World View, the stratospheric ballooning company that has offered an alternative to spacecraft for applications from remote sensing to space tourism, has terminated plans to go public through a special purpose acquisition company (SPAC) merger.'
 pubDate: 'Nov 20 2023'
-heroImage: '/news/commercial-post-04.jpg'
+heroImage: '/blog/commercial-post-04.jpg'
 tags: ["Commercial"]
 authors: ["Jeff Foust"]
 ---
