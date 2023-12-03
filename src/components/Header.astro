@@ -5,27 +5,13 @@ import Menu from "./svelte/Menu.svelte";
 <header
   class="w-full max-w-7xl mx-auto border-b border-stone-200 flex justify-between items-center"
 >
-  <button class="flex justify-start items-center gap-4 text-3xl py-10 pe-8">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="-5 -7 24 24"
-    >
-      <path
-        fill="currentColor"
-        d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2"
-      ></path>
-    </svg>
-
-    <span class="text-xs uppercase tracking-[0.3em]">menu</span>
-  </button>
-  <a href="/" class="font-sans text-4xl">
+  <Menu client:load />
+  <a href="/" class="header-button font-sans text-4xl">
     <span class="font-black">snø.</span>
     <span class="font-light">Blog</span>
   </a>
   <a
-    class="flex justify-start items-center gap-4 text-2xl py-10 ps-8"
+    class="header-button flex justify-start items-center gap-4 text-2xl py-10 ps-8"
     href="/search/"
   >
     <span class="text-xs uppercase tracking-[0.3em]">search</span>
@@ -41,38 +27,4 @@ import Menu from "./svelte/Menu.svelte";
       ></path>
     </svg>
   </a>
-  <Menu />
 </header>
-
-<style>
-  button,
-  a {
-    animation: button-out 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  }
-  button:hover,
-  a:hover {
-    animation: button-in 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  }
-
-  @keyframes button-in {
-    0% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-    100% {
-      opacity: 0.6;
-      transform: translateY(-4px);
-    }
-  }
-
-  @keyframes button-out {
-    0% {
-      opacity: 0.6;
-      transform: translateY(-4px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-</style>
