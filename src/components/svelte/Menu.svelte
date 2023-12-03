@@ -44,10 +44,6 @@
         },
         {
           name: "Two columns with sidebar",
-          url: "/homepages/one-column-sidebar",
-        },
-        {
-          name: "Three columns with sidebar",
           url: "/homepages/two-column-sidebar",
         },
       ],
