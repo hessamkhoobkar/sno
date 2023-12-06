@@ -2,9 +2,21 @@
 import Menu from "./svelte/Menu.svelte";
 ---
 
-<header
-  class="w-full max-w-7xl mx-auto border-b border-stone-200 flex justify-between items-center"
->
+<!-- 
+<script>
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+
+    if (header) {
+      if (window.scrollY > 600) {
+        header.classList.add("header-sticky");
+      } else {
+        header.classList.remove("header-sticky");
+      }
+    }
+  });
+</script> -->
+<header class="header">
   <Menu client:load />
   <a href="/" class="header-button font-sans text-4xl">
     <span class="font-black">snø.</span>
@@ -24,7 +36,22 @@ import Menu from "./svelte/Menu.svelte";
       <path
         fill="currentColor"
         d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12m6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"
-      ></path>
+      >
+      </path>
     </svg>
   </a>
 </header>
+
+<style is:global>
+  .header {
+    @apply w-full max-w-7xl mx-auto border-b border-stone-200 flex justify-between items-center top-0 bg-white z-30;
+  }
+
+  .header-sticky {
+    @apply sticky;
+  }
+
+  .header-sticky .header-button {
+    @apply p-4;
+  }
+</style>
