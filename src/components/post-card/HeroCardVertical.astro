@@ -4,8 +4,6 @@ const { slug, post } = Astro.props;
 
 const postTitle =
   post.title.length > 80 ? post.title.slice(0, 80) + "..." : post.title;
-
-console.log(post.title.length);
 ---
 
 <div
