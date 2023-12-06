@@ -1,0 +1,54 @@
+---
+import FormattedDate from "@components/FormattedDate.astro";
+const { postData } = Astro.props;
+
+interface Post {
+  slug: string;
+  data: {
+    title: string;
+    description: string;
+    pubDate: Date;
+    updatedDate: Date;
+    heroImage: string;
+    tags: string[];
+    authors: string[];
+  };
+}
+---
+
+<div class="w-full grid grid-cols-3 gap-8 border-b border-stone-200 mb-8 pb-8">
+  {
+    postData.map((post: Post) => (
+      <div
+        class="card w-full flex flex-col justify-end items-end rounded-lg overflow-hidden"
+        style={`background-image: url(${post.data.heroImage})`}
+      >
+        <div class="flex flex-col justify-start items-start gap-2 py-6 px-4 text-white bg-stone-950">
+          <div class="flex justify-start items-center gap-2 text-xs">
+            <span class="text-stone-300">
+              <FormattedDate date={post.data.pubDate} />
+            </span>
+            <span>.</span>
+            <span class="font-bold text-sky-600 hover:text-sky-500 transition-all duration-200 ease-in-out">
+              <a class="relative block" href={`/tags/${post.data.tags[0]}/`}>
+                {post.data.tags[0]}
+              </a>
+            </span>
+          </div>
+          <h3 class="text-2xl font-serif font-bold">{post.data.title}</h3>
+        </div>
+        <a class="absolute inset-0 z-10" href={`/blog/${post.slug}/`} />
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .card {
+    position: relative;
+    height: 28rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>

@@ -1,19 +1,17 @@
 ---
+import MainLayout from "@layouts/MainLayout.astro";
+import RowThree from "@components/hero-layout/RowThree.astro";
+import TwoColWithSidebar from "@components/list-layout/TwoColWithSidebar.astro";
+
+// Get data from Astro's content collection
 import { getCollection } from "astro:content";
 const allBlogPost = await getCollection("blog");
-import MainLayout from "@layouts/MainLayout.astro";
-import PostVertical from "../../components/PostVertical.astro";
-import TwoColWithSidebar from "@/components/list-layout/TwoColWithSidebar.astro";
+
+const topThreePost = allBlogPost.slice(0, 3);
+const restOfPost = allBlogPost.slice(3);
 ---
 
 <MainLayout>
-  <p>Hero section</p>
-  <!-- List section -->
-  <TwoColWithSidebar>
-    {
-      allBlogPost.map((post) => (
-        <PostVertical slug={post.slug} post={post.data} />
-      ))
-    }
-  </TwoColWithSidebar>
+  <RowThree postData={topThreePost} />
+  <TwoColWithSidebar postData={restOfPost} />
 </MainLayout>
