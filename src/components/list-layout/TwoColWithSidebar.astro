@@ -1,0 +1,12 @@
+---
+import Sidebar from "@components/Sidebar.astro";
+---
+
+<div class="w-full flex justify-start items-start gap-12">
+  <div class="w-3/4 grid grid-cols-2 gap-8">
+    <slot />
+  </div>
+  <div class="w-1/4 sticky top-8">
+    <Sidebar />
+  </div>
+</div>

@@ -2,9 +2,9 @@
 import "@fontsource-variable/inter";
 import "@fontsource-variable/lora";
 
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from "@components/BaseHead.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 const { siteTitle = SITE_TITLE, siteDescription = SITE_DESCRIPTION } =
@@ -17,9 +17,9 @@ const { siteTitle = SITE_TITLE, siteDescription = SITE_DESCRIPTION } =
     <BaseHead title={siteTitle} description={siteDescription} />
   </head>
   <body
-    class="font-sans text-stone-950 leading-normal tracking-normal p-4 pt-0"
+    class="font-sans text-stone-950 leading-normal tracking-normal p-4 pt-0 min-h-screen"
   >
-    <Header title={SITE_TITLE} />
+    <Header title={siteTitle} />
     <div class="w-full max-w-7xl mx-auto py-8">
       <slot />
     </div>

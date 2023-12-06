@@ -1,16 +1,19 @@
 ---
 import { getCollection } from "astro:content";
 const allBlogPost = await getCollection("blog");
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import MainLayout from "@layouts/MainLayout.astro";
 import PostVertical from "../../components/PostVertical.astro";
+import TwoColWithSidebar from "@/components/list-layout/TwoColWithSidebar.astro";
 ---
 
-<BaseLayout>
-  <div class="grid grid-cols-3 gap-8">
+<MainLayout>
+  <p>Hero section</p>
+  <!-- List section -->
+  <TwoColWithSidebar>
     {
       allBlogPost.map((post) => (
         <PostVertical slug={post.slug} post={post.data} />
       ))
     }
-  </div>
-</BaseLayout>
+  </TwoColWithSidebar>
+</MainLayout>
