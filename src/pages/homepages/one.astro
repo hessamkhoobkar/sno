@@ -7,11 +7,11 @@ import TwoColWithSidebar from "@components/list-layout/TwoColWithSidebar.astro";
 import { getCollection } from "astro:content";
 const allBlogPost = await getCollection("blog");
 
-const topThreePost = allBlogPost.slice(0, 3);
-const restOfPost = allBlogPost.slice(3);
+const heroPosts = allBlogPost.slice(0, 3);
+const listPosts = allBlogPost.slice(3);
 ---
 
 <MainLayout>
-  <RowThree postData={topThreePost} />
-  <TwoColWithSidebar postData={restOfPost} />
+  <RowThree postData={heroPosts} />
+  <TwoColWithSidebar postData={listPosts} />
 </MainLayout>
