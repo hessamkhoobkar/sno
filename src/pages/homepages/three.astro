@@ -1,0 +1,17 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import GridThree from "@components/hero-layout/GridThree.astro";
+import TwoColWithSidebar from "@components/list-layout/TwoColWithSidebar.astro";
+
+// Get data from Astro's content collection
+import { getCollection } from "astro:content";
+const allBlogPost = await getCollection("blog");
+
+const heroPosts = allBlogPost.slice(0, 3);
+const listPosts = allBlogPost.slice(3);
+---
+
+<MainLayout>
+  <GridThree postData={heroPosts} />
+  <TwoColWithSidebar postData={listPosts} />
+</MainLayout>

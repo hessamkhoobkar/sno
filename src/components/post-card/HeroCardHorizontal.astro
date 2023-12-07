@@ -4,7 +4,7 @@ const { slug, post } = Astro.props;
 ---
 
 <div
-  class="card relative w-full hero-height flex justify-start items-start rounded-lg bg-stone-950 overflow-hidden"
+  class="card relative w-full flex justify-start items-start rounded-lg bg-stone-950 overflow-hidden"
 >
   <div class="w-1/2 h-full overflow-hidden">
     <img
@@ -14,7 +14,7 @@ const { slug, post } = Astro.props;
     />
   </div>
   <div
-    class="w-1/2 flex flex-col justify-start items-start gap-4 p-8 text-white h-full"
+    class="w-1/2 flex flex-col justify-start items-start gap-4 p-8 text-white h-60"
   >
     <div class="flex justify-start items-center gap-2 text-xs">
       <span class="text-stone-300">
@@ -29,7 +29,7 @@ const { slug, post } = Astro.props;
         </a>
       </span>
     </div>
-    <h3 class="relative text-4xl font-serif font-bold">
+    <h3 class="relative text-xl font-serif font-bold">
       <span>
         {post.title}
       </span>
@@ -41,8 +41,6 @@ const { slug, post } = Astro.props;
         {post.title}
       </span>
     </h3>
-
-    <p class="text">{post.description}</p>
   </div>
   <a class="absolute inset-0 z-10" href={`/blog/${slug}/`}></a>
 </div>
