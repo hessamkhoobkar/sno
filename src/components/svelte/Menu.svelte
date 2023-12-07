@@ -31,20 +31,37 @@
       title: "Home Pages",
       links: [
         {
-          name: "Two columns",
-          url: "/homepages/two-column",
+          name: "HomePage One",
+          url: "/homepage/one",
         },
         {
-          name: "Three columns",
-          url: "/homepages/three-column",
+          name: "HomePage Two",
+          url: "/homepage/two",
         },
         {
-          name: "One columns with sidebar",
-          url: "/homepages/one-column-sidebar",
+          name: "HomePage Three",
+          url: "/homepage/three",
+        },
+      ],
+    },
+    {
+      title: "List Views",
+      links: [
+        {
+          name: "Two Column",
+          url: "/listpage/two-column",
         },
         {
-          name: "Two columns with sidebar",
-          url: "/homepages/two-column-sidebar",
+          name: "Three Column",
+          url: "/listpage/three-column",
+        },
+        {
+          name: "One Column with sidebar",
+          url: "/listpage/one-column-sidebar",
+        },
+        {
+          name: "Two Column with sidebar",
+          url: "/listpage/two-column-sidebar",
         },
       ],
     },
@@ -104,11 +121,13 @@
         easing: cubicInOut,
       }}
     >
-      <div class="w-full max-w-7xl mx-auto flex justify-start items-stretch">
+      <div
+        class="w-full max-w-7xl mx-auto flex justify-start items-stretch py-8"
+      >
         {#each linksData as group, index}
           <div
-            class={`flex flex-col justify-start items-start border-stone-200 grow ${
-              index === 0 ? "" : "border-l pl-4"
+            class={`flex flex-col justify-start items-start border-stone-200 grow px-12 ${
+              index === 0 ? "" : "border-l"
             }`}
           >
             <span class="font-sans text-sm text-stone-600 mb-4">
@@ -116,14 +135,14 @@
             </span>
             {#each group.links as link}
               <a
-                class="relative font-serif text-lg font-bold block"
+                class="relative font-serif text-lg font-bold block py-1 w-full"
                 href={link.url}
               >
                 <span>
                   {link.name}
                 </span>
                 <span
-                  class="absolute block inset-0 underline opacity-0 hover:opacity-100 duration-300 ease-in-out"
+                  class="absolute block inset-0 underline opacity-0 hover:opacity-100 duration-300 ease-in-out py-1"
                 >
                   {link.name}
                 </span>
