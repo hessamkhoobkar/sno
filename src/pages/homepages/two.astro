@@ -1,0 +1,17 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import SinglePost from "@components/hero-layout/SinglePost.astro";
+import ThreeCol from "@components/list-layout/ThreeCol.astro";
+
+// Get data from Astro's content collection
+import { getCollection } from "astro:content";
+const allBlogPost = await getCollection("blog");
+
+const heroPost = allBlogPost.slice(0, 1);
+const listPosts = allBlogPost.slice(1);
+---
+
+<MainLayout>
+  <SinglePost post={heroPost[0]} />
+  <ThreeCol postData={listPosts} />
+</MainLayout>

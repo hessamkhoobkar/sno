@@ -1,0 +1,27 @@
+---
+import PostVertical from "@/components/post-card/PostVertical.astro";
+const { postData } = Astro.props;
+
+interface Post {
+  slug: string;
+  data: {
+    title: string;
+    description: string;
+    pubDate: Date;
+    updatedDate: Date;
+    heroImage: string;
+    tags: string[];
+    authors: string[];
+  };
+}
+---
+
+<div class="w-full flex justify-start items-start gap-12">
+  <div class="w-full grid grid-cols-3 gap-8">
+    {
+      postData.map((post: Post) => (
+        <PostVertical slug={post.slug} post={post.data} />
+      ))
+    }
+  </div>
+</div>
