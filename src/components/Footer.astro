@@ -2,6 +2,82 @@
 const today = new Date();
 ---
 
-<footer class="max-w-5xl mx-auto border-t border-stone-200 py-8 mt-8">
-  &copy; {today.getFullYear()} Your name here. All rights reserved.
+<footer class="w-full max-w-7xl mx-auto border-t border-stone-200 py-16 mt-8">
+  <div class="flex justify-start items-start mb-8">
+    <div class="w-6/12 flex flex-col justify-start items-start gap-4">
+      <a href="/" class="font-sans text-4xl">
+        <span class="font-black">snø.</span>
+        <span class="font-light">Blog</span>
+      </a>
+      <p class="w-3/4">
+        Explore Snø, a free blog theme powered by Astro. Immerse your audience
+        in a seamless blend of minimalism and sophistication.
+      </p>
+    </div>
+    <div
+      class="w-3/12 h-full flex flex-col justify-start items-start gap-2 px-16 border-s border-stone-200"
+    >
+      <h4 class="font-serif text-lg font-bold mb-1">Social</h4>
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/hessam-khoobkar/"
+        target="_blank"
+      >
+        Linkedin
+      </a>
+      <a
+        class="link"
+        href="https://www.instagram.com/hessam_khoobkar/"
+        target="_blank"
+        >Instagram
+      </a>
+      <a
+        class="link"
+        href="https://dribbble.com/hessam_khoobkar"
+        target="_blank"
+        >Dribbble
+      </a>
+      <a class="link" href="https://github.com/hessamkhoobkar" target="_blank"
+        >Github</a
+      >
+    </div>
+    <div
+      class="w-3/12 h-full flex flex-col justify-start items-start gap-2 px-16 border-s border-stone-200"
+    >
+      <h4 class="font-serif text-lg font-bold mb-1">Pages</h4>
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/hessam-khoobkar/"
+        target="_blank"
+      >
+        About
+      </a>
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/hessam-khoobkar/"
+        target="_blank"
+      >
+        Contact
+      </a>
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/hessam-khoobkar/"
+        target="_blank"
+      >
+        Search
+      </a>
+    </div>
+  </div>
+  <p>
+    &copy; {today.getFullYear()} Your name here. All rights reserved.
+  </p>
 </footer>
+
+<style>
+  .link {
+    @apply text-sm font-medium text-stone-500 tracking-wide transition-all duration-200 ease-in-out;
+  }
+  .link:hover {
+    @apply text-stone-950;
+  }
+</style>
