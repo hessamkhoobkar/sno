@@ -1,0 +1,12 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import TwoColWithSidebar from "@components/list-layout/TwoColWithSidebar.astro";
+
+// Get data from Astro's content collection
+import { getCollection } from "astro:content";
+const allBlogPost = await getCollection("blog");
+---
+
+<MainLayout>
+  <TwoColWithSidebar postData={allBlogPost} />
+</MainLayout>

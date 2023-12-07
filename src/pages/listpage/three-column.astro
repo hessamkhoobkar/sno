@@ -1,0 +1,12 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import ThreeCol from "@components/list-layout/ThreeCol.astro";
+
+// Get data from Astro's content collection
+import { getCollection } from "astro:content";
+const allBlogPost = await getCollection("blog");
+---
+
+<MainLayout>
+  <ThreeCol postData={allBlogPost} />
+</MainLayout>

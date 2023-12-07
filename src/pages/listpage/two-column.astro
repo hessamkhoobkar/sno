@@ -1,0 +1,12 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import TwoCol from "@components/list-layout/TwoCol.astro";
+
+// Get data from Astro's content collection
+import { getCollection } from "astro:content";
+const allBlogPost = await getCollection("blog");
+---
+
+<MainLayout>
+  <TwoCol postData={allBlogPost} />
+</MainLayout>
