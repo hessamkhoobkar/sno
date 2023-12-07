@@ -1,7 +1,65 @@
 ---
+import LandingCard from "@/components/LandingCard.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+
+const homepages = [
+  {
+    title: "HomePage One",
+    href: "/homepage/one",
+    image: "/landing-page/homepage-one.webp",
+  },
+  {
+    title: "HomePage Two",
+    href: "/homepage/two",
+    image: "/landing-page/homepage-two.webp",
+  },
+  {
+    title: "HomePage Three",
+    href: "/homepage/three",
+    image: "/landing-page/homepage-three.webp",
+  },
+];
+
+const listpages = [
+  {
+    title: "Two Column",
+    href: "/listpage/two-column",
+    image: "/landing-page/listpage-two-column.webp",
+  },
+  {
+    title: "Three Column",
+    href: "/listpage/three-column",
+    image: "/landing-page/listpage-three-column.webp",
+  },
+  {
+    title: "One Column with sidebar",
+    href: "/listpage/one-column-sidebar",
+    image: "/landing-page/listpage-one-column-sidebar.webp",
+  },
+  {
+    title: "Two Column with sidebar",
+    href: "/listpage/two-column-sidebar",
+    image: "/landing-page/listpage-two-column-sidebar.webp",
+  },
+];
 ---
 
 <MainLayout>
-  <h1>Hello, this is a index page</h1>
+  <div
+    class="w-2/3 mx-auto flex flex-col justify-center items-center gap-4 py-16"
+  >
+    <h1 class="text-6xl font-bold text-center text-gray-800 uppercase">snø</h1>
+    <p class="text-center text-gray-600">
+      Explore Snø, a free blog theme powered by Astro. Immerse your audience in
+      a seamless blend of minimalism and sophistication. Elevate your online
+      presence with lightning-fast performance, responsive design, and easy
+      customization. Download Snø now for a delightful blogging experience.
+    </p>
+  </div>
+  <div class="w-full flex justify-center items-start gap-8 pb-16">
+    {homepages.map((homepage) => <LandingCard link={homepage} />)}
+  </div>
+  <div class="w-full flex justify-center items-start gap-8 pb-16">
+    {listpages.map((listpage) => <LandingCard link={listpage} />)}
+  </div>
 </MainLayout>

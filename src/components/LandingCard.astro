@@ -1,0 +1,40 @@
+---
+const { link } = Astro.props;
+---
+
+<a
+  href={link.href}
+  class="w-1/5 flex flex-col justify-center items-center gap-4"
+>
+  <h2 class="relative font-serif font-bold text-center text-gray-800">
+    <span>
+      {link.title}
+    </span>
+    <span
+      class="undrline absolute block inset-0 underline opacity-0 hover:opacity-100 duration-300 ease-in-out"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      {link.title}
+    </span>
+  </h2>
+  <div class="w-full rounded-xl border border-stone-200 overflow-hidden">
+    <img class="origin-top" src={link.image} alt={link.title} />
+  </div>
+</a>
+
+<style>
+  a:hover .undrline {
+    opacity: 1;
+  }
+
+  a img {
+    transform: scale(1);
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  a:hover img {
+    transform: scale(1.1);
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+</style>
